@@ -1,6 +1,7 @@
 @import 'libs/bootstrap-reboot';
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import 'base/variables';
+@import 'base/mixins';
 @import 'base/fontsicon';
 
 * {
@@ -8,3 +9,15 @@
     margin: 0;
     padding: 0;
 }
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+@import 'blocks/title';
+@import 'blocks/promo';
+@import 'blocks/menu';
+@import 'blocks/buttons';
+@import 'blocks/round';
+@import 'blocks/about';

@@ -1,0 +1,92 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s all;
+    &_active {
+        left: 0;
+        visibility: visible;
+        opacity: 1;
+    }
+    &__block{
+        position: relative;
+        width: 345px;
+        height: 100%;
+        background: $violet;
+        padding-top: 140px;
+        padding-left: 40px;
+        transition: .5s all;
+        z-index: 12;
+        &_close {
+            position: absolute;
+            right: 25px;
+            top: 25px;
+            cursor: pointer;
+        }
+        &_social {
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            a {
+                color: $white;
+                text-decoration: none;
+                margin: 0 7px;
+            }
+        }
+    }
+    &__lists {
+        list-style: none;
+        padding-left: 35px;
+    }
+    &__link {
+        position: relative;
+        padding-bottom: 15px;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        &:before {
+            display: block;
+            position: absolute;
+            left: -35px;
+            top: 7px;
+            content: '';
+            border: 1px solid $white;
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+        }
+        &:hover {
+            &:before {
+                background: $white;
+                width: 15px;
+                height: 15px;
+                animation: pulse  1s infinite ease-in-out;
+            }
+        }
+        a {
+            color: $white;
+            text-decoration: none;
+        }
+    }
+
+    &__overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba($color: #000000, $alpha: .75);
+    }
+}
+
+@keyframes pulse {
+    from {transform: scale(1, 1);}
+    50% {transform: scale(.1, .1);}
+    to {transform: scale(1, 1);}
+    }
