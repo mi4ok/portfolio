@@ -1,0 +1,10 @@
+.line {
+    width: 66px;
+    height: 3px;
+    background: $violet;
+    margin-top: 12px;
+    &_about {
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+}

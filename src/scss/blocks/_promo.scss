@@ -57,6 +57,8 @@
     transform: rotate(-90deg);
     z-index: 1;
     top: 50%;
+    mix-blend-mode: difference;
+    cursor: default;
     &_line {
         width: 70px;
         height: 2px;

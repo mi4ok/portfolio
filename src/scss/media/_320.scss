@@ -1,0 +1,26 @@
+@media (max-width: 576px) {
+    .promo {
+        padding: 194px 0 236px 0;
+        position: relative;
+        .container {
+            width: 100%;
+            padding: 0 15px 0 15px;
+        }
+    }
+    .title {
+        &_fs48 {
+            font-size: 32px;
+        }
+    }
+    .social {
+        display: none;
+    }
+    .menu {
+        &__block {
+            &_close {
+                right: 48px;
+            }
+        }
+    }
+    
+}
