@@ -1,0 +1,60 @@
+.portfolio {
+    padding-bottom: 66px;
+    &__sub {
+        text-align: center;
+        margin: 0 auto;
+        color: $black;
+        position: relative;
+        z-index: 1;
+        padding-left: 10px;
+        @include resume_circle;
+    }
+
+    &__title {
+        text-align: center;
+        margin: 0 auto;
+        color: $black;
+        margin-top: 15px;
+    }
+
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        grid-template-areas: 
+        "uber pulse bread vcard"
+        "s92 sers sers vcard";
+        gap: 5px;
+    }
+
+    #uber {
+        grid-area: uber;
+    }
+    #pulse {
+        grid-area: pulse;
+    }
+    #bread {
+        grid-area: bread;
+    }
+    #vcard {
+        grid-area: vcard;
+    }
+    #s92 {
+        grid-area: s92;
+    }
+    #sers {
+        grid-area: sers;
+    }
+
+    &__item {
+        transition: .5s all;
+        filter: blur(.1px);
+        img {
+            width: 100%;
+        }
+        &:hover {
+            transform: scale(1.01);
+            filter: drop-shadow(16px 10px 10px black)  grayscale(0) blur(0);
+            z-index: 2;
+        }
+    }
+}
