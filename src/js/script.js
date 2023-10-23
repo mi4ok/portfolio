@@ -14,3 +14,26 @@ function closeMenu() {
 hamburger.addEventListener('click', openMenu);
 close.addEventListener('click', closeMenu);
 closeOverlay.addEventListener('click', closeMenu);
+
+const counters = document.querySelectorAll('.counter'),
+    lines = document.querySelectorAll('.skills__linear span');
+
+counters.forEach( (item, i) => {
+    // Преобразуем значение в число
+    const counterValue = parseFloat(item.innerHTML);
+    if (counterValue > 100) {
+        item.innerHTML = "100%";
+    }
+    lines[i].style.width = item.innerHTML;
+});
+
+wow = new WOW(
+    {
+    boxClass:     'wow',      // default
+    animateClass: 'animate__animated', // default
+    offset:       0,          // default
+    mobile:       true,       // default
+    live:         true        // default
+  }
+  )
+  wow.init();

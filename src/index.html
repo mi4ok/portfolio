@@ -37,6 +37,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="images/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     
 </head>
@@ -79,9 +80,9 @@
     <div class="promo">
         <div class="container">
 
-            <div class="title title_fs16 promo__inline">Меня зовут Михаил</div>
-            <h1 class="title title_fs48">Web-разработка <br>в Севастополе</h1>
-            <div class="promo__buttons">
+            <div class="title title_fs16 promo__inline wow animate__lightSpeedInRight">Меня зовут Михаил</div>
+            <h1 class="title title_fs48 wow animate__lightSpeedInLeft">Web-разработка <br>в Севастополе</h1>
+            <div class="promo__buttons wow animate__fadeInBottomLeft">
                 <button class="button button_promo"><span>Портфолио</span></button>
                 <a href="#" class="promo__about">Про меня</a>
             </div>
@@ -97,16 +98,16 @@
         <div class="container">
             <div class="about__grid">
                 <div class="about__grid_left">
-                    <img src="images/img/I_anime.jpg" alt="photo" class="about__photo">
+                    <img src="images/img/I_anime.jpg" alt="photo" class="about__photo wow animate__zoomIn">
                 </div>
                 <div class="about__grid_right">
                     <div class="about__grid_top">
-                        <div class="about__me">Про меня</div>
-                        <h2 class="about__name">Меня зовут Михаил</h2>
-                        <div class="line line_about"></div>
-                        <div class="about__desc">Я увлеченный фрилансер из Севастополя, Россия, предлагаю вам веб-разработку и дизайн из будущего. Мой опыт заключается в разработке веб-сайтов нового уровня и веб-приложений, включая полный дизайн интерфейса.</div>
+                        <div class="about__me wow animate__zoomIn">Про меня</div>
+                        <h2 class="about__name wow animate__zoomIn">Меня зовут Михаил</h2>
+                        <div class="line line_about wow animate__zoomIn"></div>
+                        <div class="about__desc wow animate__zoomIn">Я увлеченный фрилансер из Севастополя, Россия, предлагаю вам веб-разработку и дизайн из будущего. Мой опыт заключается в разработке веб-сайтов нового уровня и веб-приложений, включая полный дизайн интерфейса.</div>
                     </div>
-                    <div class="about__grid_bottom">
+                    <div class="about__grid_bottom wow animate__zoomIn">
                         <div class="about__grid_text">
                             <div class="about__grid_text_icon"><img src="images/icons/web_dev.svg" alt="design" class="about__grid_img"></div>
                             <h5 class="about__grid_header">Web-разработка</h5>
@@ -129,14 +130,14 @@
         </div>
     </div>
 
-    <div class="resume">
+    <div class="resume wow animate__zoomIn" data-wow-delay=".1s">
         <div class="container">
             <div class="title title_fs16 resume__sub">Опыт</div>
             <h2 class="title title_fs36 resume__title">Чем я буду полезен</h2>
             <div class="line line_about"></div>
 
             <div class="resume__wrapper">
-                <div class="resume__column">
+                <div class="resume__column wow animate__zoomInLeft" data-wow-delay=".5s">
                     <h3 class="title title_fs20 resume__column_title">Образование</h3>  
                     <ul>
                         <li>
@@ -171,7 +172,7 @@
                 </div>
 
 
-                <div class="resume__column">
+                <div class="resume__column wow animate__zoomInRight" data-wow-delay="1s">
                     <h3 class="title title_fs20 resume__column_title">Опыт работы</h3>  
                     <ul>
                         <li>
@@ -209,20 +210,131 @@
         </div>
     </div>
 
+    <div class="skills wow animate__zoomIn" data-wow-delay=".1s">
+        <div class="container">
+            <div class="title title_fs16 resume__sub">Навыки</div>
+            <h2 class="title title_fs36 resume__title">Что я использую в работе</h2>
+            <div class="line line_about"></div>
 
+            <div class="skills__lists">
+                <div class="skills__list wow animate__zoomIn" data-wow-delay=".2s">
+                    <div class="skills__image">
+                        <img src="images/icons/html5.svg" alt="html5">
+                    </div>
+                    <div class="title title_fs14 skills_dist">HTML5</div>
+                    Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать более SEO-оптимизированную структуру вашего продукта
+                </div>
+                <div class="skills__list wow animate__zoomIn" data-wow-delay=".4s">
+                    <div class="skills__image">
+                        <img src="images/icons/css3.svg" alt="">
+                    </div>
+                    <div class="title title_fs14 skills_dist">CSS3</div>
+                    Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или приложения. Все ограничивается только вашей фантазией!
+                </div>
+                <div class="skills__list wow animate__zoomIn" data-wow-delay=".6s">
+                    <div class="skills__image">
+                        <img src="images/icons/JS.svg" alt="JS">
+                    </div>
+                    <div class="title title_fs14 skills_dist">Java Script</div>
+                    Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое
+                </div>
+                <div class="skills__list wow animate__zoomIn" data-wow-delay=".8s">
+                    <div class="skills__image">
+                        <img src="images/icons/Jquery.svg" alt="Jquery">
+                    </div>
+                    <div class="title title_fs14 skills_dist">Jquery</div>
+                    Библиотека Jquery позволит ускорить разработку. Без необходимости интегрировать в проект мы её не будем, но навык работы с ней присутствует
+                </div>
+                <div class="skills__list wow animate__zoomIn" data-wow-delay="1s">
+                    <div class="skills__image">
+                        <img src="images/icons/React.svg" alt="React">
+                    </div>
+                    <div class="title title_fs14 skills_dist">React</div>
+                    Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели
+                </div>
+                <div class="skills__list wow animate__zoomIn" data-wow-delay="1.2s">
+                    <div class="skills__image">
+                        <img src="images/icons/Node.js.svg" alt="Node.js">
+                    </div>
+                    <div class="title title_fs14 skills_dist">Node.js</div>
+                    Эта платформа позволяет создавать бэкенд для вашего продукта - “мозги”, которые будут выполнять действия, которые пользователь не видит
+                </div>
+                <div class="skills__list wow animate__zoomIn"  data-wow-delay="1.4s">
+                    <div class="skills__image">
+                        <img src="images/icons/Mongo.db.svg" alt="Mongo.db">
+                    </div>
+                    <div class="title title_fs14 skills_dist">Mongo.db</div>
+                    Это нереляционная база данных, которая будет хранить данные вашего сайта или приложения
+                </div>
+            </div>
 
+            <div class="skills__wrapper">
 
+                <div class="skills__level">
+                    <div class="title title_fs14 skills__inline">
+                        Создание сайтов
+                        <p class="counter">80%</p>
+                    </div>
+                    <div class="skills__linear">
+                        <span></span>
+                    </div>
+                </div>
+                
+                <div class="skills__level">
+                    <div class="title title_fs14 skills__inline">
+                        Создание приложений
+                        <p class="counter">50%</p>
+                    </div>
+                    <div class="skills__linear">
+                        <span></span>
+                    </div>
+                </div>
 
-<!--     
-    asdasd вапываыпыва 
-    <span class="icon-designer"></span>
-    <span class="icon-courses"></span>
-    <span class="icon-developer"></span>
-    <span class="icon-university"></span>
-    <span class="icon-design"></span>
-    <span class="icon-mob_dev"></span>
-    <span class="icon-web_dev"></span> -->
+                <div class="skills__level">
+                    <div class="title title_fs14 skills__inline">
+                        Работа с данными
+                        <p class="counter">60%</p>
+                    </div>
+                    <div class="skills__linear">
+                        <span style="width: 50%"></span>
+                    </div>
+                </div>
 
+                <div class="skills__level">
+                    <div class="title title_fs14 skills__inline">
+                        Креативность
+                        <p class="counter">50%</p>
+                    </div>
+                    <div class="skills__linear">
+                        <span style="width: 50%"></span>
+                    </div>
+                </div>
+
+                <div class="skills__level">
+                    <div class="title title_fs14 skills__inline">
+                        Создание дизайна
+                        <p class="counter">50%</p>
+                    </div>
+                    <div class="skills__linear">
+                        <span style="width: 50%"></span>
+                    </div>
+                </div>
+
+                <div class="skills__level">
+                    <div class="title title_fs14 skills__inline">
+                        Soft skills
+                        <p class="counter">80%</p>
+                    </div>
+                    <div class="skills__linear">
+                        <span style="width: 50%"></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/libs/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
