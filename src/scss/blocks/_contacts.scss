@@ -1,0 +1,152 @@
+.contacts {
+    padding-bottom: 91px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: left;
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        &-image {
+            margin: 0 auto;
+            width: 400px;
+            height: 600px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    &_sub {
+        color: $black;
+        position: relative;
+        z-index: 1;
+        padding-left: 10px;
+        @include resume_circle;
+        &:before {
+            left: 0;
+        }
+    }
+    &_title {
+        color: $black;
+        margin-top: 15px;
+    }
+    &_line {
+        margin-left: 0;
+    }
+    &_fs14 {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    &__icons {
+        margin-top: 20px;
+        span {
+            font-size: 30px;
+        }
+        a {
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            text-decoration: none;
+            margin-right: 12px;
+            .icon-github, .icon-telegram, .icon-vk {
+                color: $black;
+            }
+        }
+    }
+    &__forms {
+        margin-top: 30px;
+        position: relative;
+        input[type=text], input[type=email] {
+            width: 280px;
+            height: 45px;
+            position: relative;
+            padding: 14px 20px;
+        }
+        label[for=email]::after {
+            display: block;
+            position: absolute;
+            content: 'Ваша почта';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            color: $black;
+            background-color: $white;
+            z-index: 2;
+            top: -8px;
+            left: 309px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        label[for=name]::after {
+            display: block;
+            position: absolute;
+            content: 'Ваше имя';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            color: $black;
+            background-color: $white;
+            z-index: 2;
+            top: -8px;
+            left: 21px;   
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        label[for=message]::after {
+            display: block;
+            position: absolute;
+            content: 'Ваше сообщение';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            color: $black;
+            background-color: $white;
+            z-index: 2;
+            top: 67px;
+            left: 21px;   
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+
+        textarea {
+            width: 585px;
+            height: 190px;
+            border: 1px solid #000;
+            background: rgba(196, 196, 196, 0.00);
+            resize: none;
+            margin-top: 30px;
+            padding: 14px 20px;
+        }
+    }
+    &__button {
+        width: 219px;
+        height: 45px;
+    }
+
+    &__footer {
+        margin-top: 28px;
+        display: grid;
+        grid-template-columns: 219px 1fr;
+        color: #000;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        align-items: center;
+        a {
+            text-decoration: none;
+        }
+    }
+    &__privacy {
+        margin-left: 35px;
+        display: flex;
+        justify-content: space-around;
+    }
+}
