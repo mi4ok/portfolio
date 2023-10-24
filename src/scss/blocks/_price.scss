@@ -1,0 +1,52 @@
+.price {
+    min-height: 403px;
+    padding-bottom: 120px;
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 306px;
+        row-gap: 15px;
+    }
+    &__list {
+        padding-left: 25px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            background: $violet;
+            top: 3px;
+        }
+        &-desc {
+            color: #000;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            justify-self: self-start;
+            grid-column: 1/3;
+            padding-top: 5px;
+
+        }
+        &-name, &-summ {
+            color: #000;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            align-self: center;
+            justify-self: self-start;
+        }
+        &-summ {
+            justify-self: self-end;
+        }
+    }
+}
