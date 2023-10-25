@@ -1,127 +1,26 @@
-@media (max-width: 576px) {
-    .container {
-        padding: 0 5px 0 5px;
-    }
-    .promo {
-        padding: 194px 0 236px 0;
-        position: relative;
-        .container {
-            width: 100%;
-            padding: 0 15px 0 15px;
-        }
-    }
-    .title {
-        &_fs48 {
-            font-size: 32px;
-        }
-    }
-    .social {
-        display: none;
-    }
-    .menu {
-        &__block {
-            &_close {
-                right: 48px;
-            }
-        }
-    }
+@media (max-width: 768px) {
     .about {
-        min-height: 660px;
-        margin-top: 40px;
-        &__name {
-            font-size: 24px;
-        }
         &__grid {
-            grid-template-columns: 1fr;
-            grid-template-rows: auto;
-            row-gap: 46px;
-            &_left {
-                width: 100%;
-                height: 340px;
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
-            &_text {
-                padding-left: 46px;
-            }
-            &_bottom {
-                grid-template-columns: 1fr;
-                padding-left: 10px;
-            }
-        }
-    }
-
-    .line {
-        &_about {
-            margin: 15px auto 0 auto;
+            grid-template-columns: auto;
         }
     }
     .resume {
-        margin-top: 40px;
-        &__title {
-            font-size: 24px;
-            line-height: normal;
-        }
         &__wrapper {
-            grid-template-columns: 1fr;
-            padding-left: 15px;
-        }
-        .line {
-            margin: 0 auto;
-        }
-        &__item {
-            &-body {
-                font-size: 12px;
-            }
-        }
-        &__sub {
-            &:before {
-                left: 46%;
-            }
+            grid-template-columns: auto;
         }
     }
 
     .skills {
         &__lists {
-            grid-template-columns: 270px;
-            justify-content: center;
+            grid-template-columns: repeat(2, auto);
         }
         &__list {
             &:after {
                 display: none;
             }
         }
-        &__inline {
-            &::before {
-                top: -41%;
-            }
-        }
         &__wrapper {
             grid-template-columns: 1fr;
-        }
-    }
-    
-    .portfolio {
-        &__wrapper {
-            justify-content: center;
-            grid-template-columns: 280px;
-            gap: 20px;
-            grid-template-areas: 
-            "uber"
-            "pulse"
-            "bread"
-            "vcard"
-            "s92"
-            "sers";
-
-        }
-        &__sub {
-            &::before {
-                left: 45%;
-            }
         }
     }
 
@@ -130,6 +29,7 @@
             grid-template-columns: 1fr;
         }
     }
+
     .contacts {
         &__container {
             &-image {
@@ -192,8 +92,6 @@
             display: inline-block;
         }
     }
-
-
     @keyframes resumepulse {
         0% {
             top: 13px;
@@ -214,27 +112,26 @@
             z-index: 2;
         }
         44.44% {
-            top: 269px;
+            top: 293px;
             left: -7px;
             z-index: 2;
         }
         55.56% {
-            top: 269px;
+            top: 293px;
             left: 38px;
             z-index: 2;
         }
         66.67% {
-            top: 269px;
+            top: 293px;
             left: -7px;
             z-index: 2;
         }
         77.78% {
-            top: 375px;
+            top: 430px;
             z-index: 2;
         }
         100% {
             top: 13px;
         }
     }
-    
 }

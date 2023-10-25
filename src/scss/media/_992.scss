@@ -1,0 +1,151 @@
+@media (max-width: 992px) {
+    .about {
+        min-height: 660px;
+        &__grid {
+            grid-template-columns: 300px 1fr;
+            column-gap: 18px;
+            &_left {
+                width: 100%;
+                img {
+                    object-fit: cover;
+                }
+            }
+            &_text {
+                padding-left: 46px;
+            }
+            &_bottom {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+            }
+        }
+    }
+
+    .resume {
+        &__wrapper {
+            padding: 37px 0 0 0;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 1px;
+        }
+    }
+
+    .skills {
+        &__lists {
+            margin-top: 25px;
+            grid-template-columns: repeat(3,1fr);
+        }
+        &__list {
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    .portfolio {
+        &__sub {
+            margin-top: 29px;
+        }
+    }
+    .price {
+        &__wrapper {
+            column-gap: 69px;
+            row-gap: 20px;
+        }
+    }
+    .contacts {
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+        &__privacy {
+            justify-content: unset;
+            input {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    @keyframes drop {
+        0% {
+            width: 20px;
+            height: 3px;
+            top: -2px;
+            left: -1px;
+            border-radius: 100% 0 0 100%;
+        }
+        8.33% {
+            width: 20px;
+            height: 3px;
+            top: -2px;
+            left: 246px;
+            border-radius: 100% 0 0 100%;
+        }
+        10.66% {
+            width: 3px;
+            height: 3px;
+            top: -2px;
+            left: 263px;
+        }
+        15% {
+            width: 3px;
+            height: 20px;
+            top: -1px;
+            left: 263px;
+            border-radius: 100% 100% 0 0;
+        }
+        33.33% {
+            width: 3px;
+            height: 20px;
+            top: 249px;
+            left: 263px;
+        }
+        35.66% {
+            width: 3px;
+            height: 3px;
+            top: 267px;
+            left: 263px;
+        }
+        40% {
+            width: 20px;
+            height: 3px;
+            top: 267px;
+            left: 249px;
+            border-radius: 0 100% 100% 0;
+        }
+        58.33% {
+            width: 20px;
+            height: 3px;
+            top: 267px;
+            left: -1px;
+        }
+        60.66% {
+            width: 3px;
+            height: 3px;
+            top: 267px;
+            left: -2px;
+        }
+        65% {
+            width: 3px;
+            height: 20px;
+            top: 249px;
+            left: -2px;
+            border-radius: 0 0 100% 100%;
+        }
+        83.33% {
+            width: 3px;
+            height: 20px;
+            top: -1px;
+            left: -2px;
+        }
+        85.66% {
+            width: 3px;
+            height: 3px;
+            top: -2px;
+            left: -2px;
+        }
+        100% {
+            width: 20px;
+            height: 3px;
+            top: -2px;
+            left: -1px;
+        }
+    }
+}
